@@ -25,7 +25,6 @@ section:nth-child(2n+1){
     background-image: url("images/macbook_mouse.jpg");
     opacity: 0.8;
     height: 65vh;
-    min-height: 475px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -126,6 +125,7 @@ section:nth-child(2n+1){
 
 .social-icons li{
     border-radius: 50%;
+    vertical-align: top;
 }
 
 .social-icons li:hover {
@@ -136,6 +136,12 @@ section:nth-child(2n+1){
     border-radius: 50%;
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 } */
+
+.social-icons li a i{
+    width: 1.2rem;
+    padding: 10px;
+    
+}
 
 .social-icons li a img{
     width: 1.2rem;
@@ -206,6 +212,11 @@ section:nth-child(2n+1){
     box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
     overflow: hidden;
     margin: 25px;
+}
+
+.twentypercent{
+    width: 20%;
+    height: 100%;
 }
 
 .eightypercent{
@@ -501,6 +512,10 @@ section:nth-child(2n+1){
 
     #contact-container{
         display: block;
+    }
+
+    #contact-form{
+        margin-left: 5%;
     }
 
     #contact-form-container{
