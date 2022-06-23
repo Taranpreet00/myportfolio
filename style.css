@@ -52,6 +52,45 @@ section:nth-child(2n+1){
 }
 
 /* Nav menu */
+
+#dropdown-menu{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+#dropdown-buttons-container{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+#dropdown-buttons-container ul{
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#dropdown-buttons-container ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#dropdown-buttons-container ul li{
+    padding: 2px;
+    font-weight: 400;
+}
+
+#dropdown-buttons-container ul li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+#dropdown-buttons-container ul li a:hover{
+    border-bottom: 1px solid white;
+    color: lightgray;
+}
+
 .nav-menu li a{
     transition: color 0.5s, border-bottom 4s;
 }
@@ -361,7 +400,7 @@ section:nth-child(2n+1){
     left: 50%;
     border: 1px dashed #0096fa6b; 
     width: 0;
-    height: 75%;
+    height: 67%;
 }
 
 .timeline-box::after{
@@ -440,4 +479,84 @@ section:nth-child(2n+1){
 
 .text-align-justify{
     text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-box:nth-child(2n){
+        left: 5%;
+    }
+
+    .timeline-box{
+        width: 80%;
+    }
+
+    #timeline-divider{
+        left: 95.5%;
+    }
+
+    .timeline-box:nth-child(2n)::after{
+        left: 107.5%;
+    }
+
+    #contact-container{
+        display: block;
+    }
+
+    #contact-form-container{
+        width: 90%;
+    }
+
+    #contact-details{
+        width: 90%;
+    }
+
+    #name-social-container{
+        margin-top: 0;
+    }
+
+    #my-name h1{
+        font-size: 2.2rem;
+    }
+
+    #body-header{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .nav-menu{
+        height: 0;
+        width: 0;
+        overflow: hidden;
+    }
+
+    #name-social-container{
+        margin-top: 10vh;
+    }
+
+    #dropdown-menu{
+        width: 100%;
+        height: auto;
+        text-align: right;
+    }
+
+    #dropdown-menu i{
+        color: white;
+        padding: 15px;
+        height: 25px;
+        width: 25px;
+    }
+
+    #dropdown-menu:hover #dropdown-buttons-container{
+        height: 177px;
+        width: 20%;
+        background-color: #828470;
+        position: absolute;
+        left: 78%;
+        top: 50px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    
 }
